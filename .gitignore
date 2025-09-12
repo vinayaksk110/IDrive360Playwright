@@ -1,0 +1,13 @@
+/bin/
+/target/
+/.settings
+/.project
+/.classpath
+/bin
+/.git
+/test-output/
+/src/test/java/learning/
+/src/main/java/com/idrive360/com/idrive360_2/
+/src/test/resources/
+/tokens/
+/exports/

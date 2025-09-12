@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Extra logging related to initialization of Log4j. 
+ Set to debug or trace if log4j initialization is failing. -->
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %d{HH:mm:ss.SSS} - %msg%n"/>
+        </Console>
+        <File name="File" fileName="C:\\Users\\Vinayak\\WebAutomation\\IDrive360\\resources\\log4j\\log4j.log" append="true">
+            <PatternLayout>
+                <Pattern>[%-5level] %d{HH:mm:ss.SSS} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Logger name="idrive360" level="info" additivity="true">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Root level="info">
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
