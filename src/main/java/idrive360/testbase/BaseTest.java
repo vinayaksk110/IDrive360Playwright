@@ -45,7 +45,7 @@ public class BaseTest extends PlaywrightFactory{
 		page = PlaywrightFactory.getPage();
 		pageObjectManager = new PageObjectManager(page);
 		localExcelUtility = new LocalExcelUtility();
-		System.out.println("Page initialized? " + (page != null));
+		log.info("Page initialized? " + (page != null));
 	}
 
 	@AfterClass
@@ -59,7 +59,7 @@ public class BaseTest extends PlaywrightFactory{
 			ExtentTest test = extentReports.createTest(method.getName());
 			extentTest.set(test);
 		} catch (Exception e) {
-			System.err.println("⚠️ Failed to create ExtentTest: " + e.getMessage());
+			System.err.println("❌ Failed to create ExtentTest: " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -79,7 +79,7 @@ public class BaseTest extends PlaywrightFactory{
 					break;
 
 				case ITestResult.SUCCESS:
-					logger.pass("✅ Test passed");
+					logger.pass("✔️ Test passed");
 					break;
 
 				case ITestResult.SKIP:

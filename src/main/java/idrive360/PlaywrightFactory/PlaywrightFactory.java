@@ -172,11 +172,14 @@ public class PlaywrightFactory {
 	public static void closeBrowser() {
 		if (page.get() != null)
 			page.get().close();
+		log.info("Page closed");
 		if (context.get() != null)
 			context.get().close();
+		log.info("Context closed");
 		if (browserInstance.get() != null)
 			browserInstance.get().close();
 		if (playwright.get() != null)
 			playwright.get().close();
+		log.info("Playwright closed");
 	}
 }
