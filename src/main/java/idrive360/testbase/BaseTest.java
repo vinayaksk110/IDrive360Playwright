@@ -8,6 +8,7 @@ import idrive360.PlaywrightFactory.PlaywrightFactory;
 import idrive360.data.UserCredentials;
 import idrive360.managers.ExtentManager;
 import idrive360.managers.PageObjectManager;
+import idrive360.utilities.FileCleaner;
 import idrive360.utilities.LocalExcelUtility;
 import idrive360.utilities.TakeScreenShot;
 
@@ -29,6 +30,7 @@ public class BaseTest extends PlaywrightFactory{
 	@BeforeSuite
 	public void setupReport() {
 		extentReports = ExtentManager.getInstance();
+		FileCleaner.deleteOldScreenshots(Constants.SCREENSHOTS, 30);
 	}
 
 	@AfterSuite

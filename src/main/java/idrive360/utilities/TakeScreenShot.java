@@ -11,9 +11,13 @@ import java.time.format.DateTimeFormatter;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.ScreenshotType;
 
-public class TakeScreenShot {
+import idrive360.PlaywrightFactory.PlaywrightFactory;
+import idrive360.testbase.Constants;
 
-	private static final String SCREENSHOT_DIR = "C:\\Users\\Vinayak\\eclipse-workspace\\Idrive360Playwright\\test-output\\screenshots";
+public class TakeScreenShot extends PlaywrightFactory {
+
+//	private static final String SCREENSHOT_DIR = "C:\\Users\\Vinayak\\eclipse-workspace\\Idrive360Playwright\\test-output\\screenshots";
+	private static final String SCREENSHOT_DIR = Constants.SCREENSHOTS;
 
 	public static String capture(Page page, String screenshotName) {
 		try {
@@ -22,7 +26,7 @@ public class TakeScreenShot {
 			if (!Files.exists(dir)) {
 				Files.createDirectories(dir);
 			}
-			System.out.println(dir);
+			System.out.println("[INFO ] Screenshot folder path is: "+dir);
 
 			// Create a unique file name with timestamp
 			String timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));

@@ -56,20 +56,27 @@ public class Constants {
 	public static final String MANAGEMENT_CONSOLE_PAGE_TITLE = "IDrive® 360 Management Console";
 	public static final String MY_ACCOUNT_PAGE_TITLE = "IDrive 360 account details";
 	
-	public static final String FAILED_TEST_SS = System.getProperty("user.home")
-			.concat(System.getProperty("file.separator")).concat("WebAutomation")
-			.concat(System.getProperty("file.separator")).concat("IDrive360")
-			.concat(System.getProperty("file.separator")).concat("Resources")
-			.concat(System.getProperty("file.separator")).concat("Screenshots")
-			.concat(System.getProperty("file.separator")).concat("FailedTests")
-			.concat(System.getProperty("file.separator")).toLowerCase();
+//	public static final String FAILED_TEST_SS = System.getProperty("user.home")
+//			.concat(System.getProperty("file.separator")).concat("WebAutomation")
+//			.concat(System.getProperty("file.separator")).concat("IDrive360")
+//			.concat(System.getProperty("file.separator")).concat("Resources")
+//			.concat(System.getProperty("file.separator")).concat("Screenshots")
+//			.concat(System.getProperty("file.separator")).concat("FailedTests")
+//			.concat(System.getProperty("file.separator")).toLowerCase();
 	
-	public static final String PASSED_TEST_SS = System.getProperty("user.home")
+//	public static final String PASSED_TEST_SS = System.getProperty("user.home")
+//			.concat(System.getProperty("file.separator")).concat("WebAutomation")
+//			.concat(System.getProperty("file.separator")).concat("IDrive360")
+//			.concat(System.getProperty("file.separator")).concat("Resources")
+//			.concat(System.getProperty("file.separator")).concat("Screenshots")
+//			.concat(System.getProperty("file.separator")).concat("PassedTests")
+//			.concat(System.getProperty("file.separator")).toLowerCase();
+	
+	public static final String SCREENSHOTS = System.getProperty("user.home")
 			.concat(System.getProperty("file.separator")).concat("WebAutomation")
 			.concat(System.getProperty("file.separator")).concat("IDrive360")
 			.concat(System.getProperty("file.separator")).concat("Resources")
 			.concat(System.getProperty("file.separator")).concat("Screenshots")
-			.concat(System.getProperty("file.separator")).concat("PassedTests")
 			.concat(System.getProperty("file.separator")).toLowerCase();
 	
 	public static final String RESOURCE_HOME = System.getProperty("user.home")

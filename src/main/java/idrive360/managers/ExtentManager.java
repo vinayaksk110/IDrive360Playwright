@@ -29,7 +29,7 @@ public class ExtentManager {
 				extent.setSystemInfo("Tester", "QA Engineer");
 
 			} catch (Exception e) {
-				System.err.println("⚠️ [ExtentManager] Failed to initialize ExtentReports: " + e.getMessage());
+				System.err.println("❌ [ExtentManager] Failed to initialize ExtentReports: " + e.getMessage());
 				e.printStackTrace();
 			}
 		}
