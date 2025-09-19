@@ -126,12 +126,8 @@ public class PlaywrightFactory {
 		return Constants.PROJECT_RESOURCE_HOME;
 	}
 
-	protected String getScreenshotsFailedTestPath() {
-		return Constants.FAILED_TEST_SS;
-	}
-
-	protected String getScreenshotsPassedTestPath() {
-		return Constants.PASSED_TEST_SS;
+	protected String getScreenshotsPath() {
+		return Constants.SCREENSHOTS;
 	}
 
 	protected String getWorkbookPath_AccountsForTesting() {
